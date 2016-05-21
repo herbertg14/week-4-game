@@ -11,6 +11,93 @@
 </head>
 <body>
 
+	<header>
+		<div class="container">
+			<h1>Crystals Collector!</h1>
+		</div>
+	</header>
+	<div class ="container">
+<!-- 		<div class ="jumbotron">
+			<h1>Game</h1>
+		</div>
+ -->
+		<div class="row">
+			<!-- <div class="col-lg-4"></div> -->
+			<div class="col-lg-6 panel panel-default" id="instructions">
+				<div class="panel-heading">
+					<h3 class="panel-title">Instructions</h3>
+				</div>
+				<div class="panel-body">
+					<p>You will be given a random number at the srart of the game.</p>
+					<br>
+					<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+					<br>
+					<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+					<br>
+					<p>The value of each crystal is hidden from you until you click on it.</p>
+					<br>
+					<p>Each time when the game starts, the game will change the values of each crystal.</p>
+				</div>
+			</div>
+			<!-- <div class="col-lg-4"></div> -->
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3 panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Points to get</h3>
+				</div>
+				<div class="panel-body">
+					<h2 id="score">0</h2>
+				</div>
+			</div>
+			<div class="col-sm-2 panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Wins</h3>
+				</div>
+				<div class="panel-body">
+					<h2 id="wins">0</h2>
+				</div>
+			</div>
+			<div class="col-sm-2 panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Losses</h3>
+				</div>
+				<div class="panel-body">
+					<h2 id="losses">0</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<!-- <button id="crystal1"><img src="assets/images/jewel1.gif"></button> -->
+				<img src="assets/images/jewel1.gif" id="crystal1" class="crystal">
+			</div>
+			<div class="col-sm-2">
+				<img src="assets/images/jewel2.gif" id="crystal2" class="crystal">
+			</div>
+			<div class="col-sm-2">
+				<img src="assets/images/jewel3.gif" id="crystal3" class="crystal">
+			</div>
+			<div class="col-sm-2">
+				<img src="assets/images/jewel4.gif" id="crystal4" class="crystal">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3 panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Your Score</h3>
+				</div>
+				<div class="panel-body">
+					<h2 id="yourScore">0</h2>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 	<script src="assets/javascript/game.js"></script>
 
 </body>

@@ -29,8 +29,15 @@ $('#crystal1').on('click', function() {
 
 	if (yourScore > toBeat){
 		loss += 1;
-		alert("youlost!");
+		alert("You Lost!");
 		$("#losses").html(loss);
+		playGame();
+	}
+
+	if (yourScore === toBeat){
+		wins += 1;
+		alert("You Won!");
+		$("#wins").html(wins);
 		playGame();
 	}
 });
@@ -43,12 +50,17 @@ $('#crystal2').on('click', function() {
 
 	if (yourScore > toBeat){
 		loss += 1;
-		alert("youlost!");
+		alert("You Lost!");
 		$("#losses").html(loss);
 		playGame();
 	}
 
-
+	if (yourScore === toBeat){
+		wins += 1;
+		alert("You Won!");
+		$("#wins").html(wins);
+		playGame();
+	}
 });
 
 $('#crystal3').on('click', function() {
@@ -59,8 +71,15 @@ $('#crystal3').on('click', function() {
 
 	if (yourScore > toBeat){
 		loss += 1;
-		alert("youlost!");
+		alert("You Lost!");
 		$("#losses").html(loss);
+		playGame();
+	}
+
+	if (yourScore === toBeat){
+		wins += 1;
+		alert("You Won!");
+		$("#wins").html(wins);
 		playGame();
 	}
 });
@@ -73,15 +92,19 @@ $('#crystal4').on('click', function() {
 
 	if (yourScore > toBeat){
 		loss += 1;
-		alert("youlost!");
+		alert("You Lost!");
 		$("#losses").html(loss);
+		playGame();
+	}
+
+	if (yourScore === toBeat){
+		wins += 1;
+		alert("You Won!");
+		$("#wins").html(wins);
 		playGame();
 	}
 });
 
-function resest(){
-
-}
 
 function playGame(){
 	object1.amount = Math.floor((Math.random() * 12) + 1);

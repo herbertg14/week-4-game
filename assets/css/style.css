@@ -1,4 +1,10 @@
+body {
+	background: lightblue;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
 .crystal{
 	width: 100px;
 	height: 100px;
+	margin-bottom: 20px;
 }
